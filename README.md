@@ -3,7 +3,7 @@ Based on Stefanie Molin's Hands on Data Analysis with Pandas stock_analysis pack
 
 Package for making elements of technical analysis of a stock easier.
 
-Updated to work on Python 3.7.12 as of 10/19/2021.
+Updated to work on Python 3.7.12 (Google Colab's default Python version) as of 10/19/2021.
 
 Link to original -> https://github.com/stefmolin/stock-analysis/tree/2nd_edition
 
