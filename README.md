@@ -11,6 +11,8 @@ Updated to work on Python 3.7.12 (Google Colab's default Python version) as of 1
 
 Link to original -> https://github.com/stefmolin/stock-analysis/tree/2nd_edition
 
+Check out the financial analysis notebook -> https://nbviewer.org/github/jose-cano/Exploring-data/blob/main/financial_analysis.ipynb
+
 
 ## Setup on Colab
 ```shell
