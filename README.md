@@ -45,3 +45,57 @@ fb, aapl, amzn, nflx, goog = (
 # get S&P 500 data
 sp = reader.get_index_data('S&P 500')
 ```
+### Grouping data
+```python
+from stock_analysis.utils import group_stocks, describe_group
+
+faang = group_stocks(
+    {
+        'Facebook': fb,
+        'Apple': aapl,
+        'Amazon': amzn,
+        'Netflix': nflx,
+        'Google': goog
+    }
+)
+
+# describe the group
+describe_group(faang)
+```
+
+### Building a portfolio
+Groups assets by date and sums columns to build a portfolio.
+```python
+from stock_analysis.utils import make_portfolio
+
+faang_portfolio = make_portfolio(faang)
+```
+
+### Visualizing data
+Be sure to check out the other methods here for different plot types, reference lines, shaded regions, and more!
+
+#### Single asset
+Evolution over time:
+```python
+import matplotlib.pyplot as plt
+from stock_analysis import StockVisualizer
+
+netflix_viz = StockVisualizer(nflx)
+
+ax = netflix_viz.evolution_over_time(
+    'close',
+    figsize=(10, 4),
+    legend=False,
+    title='Netflix closing price over time'
+)
+netflix_viz.add_reference_line(
+    ax,
+    x=nflx.high.idxmax(),
+    color='k',
+    linestyle=':',
+    label=f'highest value ({nflx.high.idxmax():%b %d})',
+    alpha=0.5
+)
+ax.set_ylabel('price ($)')
+plt.show()
+```
