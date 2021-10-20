@@ -15,7 +15,7 @@ Link to original -> https://github.com/stefmolin/stock-analysis/tree/2nd_edition
 ```
 *You must restart runtime after running commands*
 
-Then, drag the stock_analysis folder outside the stock-analysis folder.
+Then, drag the stock_analysis folder outside the stock-analysis folder (to your working directory).
 You're done with the setup!
 
 ### Getting data
