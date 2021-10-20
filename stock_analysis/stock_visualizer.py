@@ -432,11 +432,15 @@ class AssetGroupVisualizer(Visualizer):
             fig, ax = plt.subplots(1, 1, figsize=(10, 4))
         else:
             ax = kwargs.pop('ax')
+            
+        nn = self.data.reset_index()
+        
+        
         return sns.lineplot(
-            x=self.data.index,
+            x=nn.date,
             y=column,
-            hue=self.group_by,
-            data=self.data,
+            hue=nn.name,
+            data=nn,
             ax=ax,
             **kwargs
         )
