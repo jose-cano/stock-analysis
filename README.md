@@ -9,11 +9,13 @@ series modeling with decomposition, ARIMA, and linear regression (StockModeler).
 
 Updated to work on Python 3.7.12 (Google Colab's default Python version) as of 10/19/2021.
 
-Link to [original][2]
+Link to [original][1].
 
-Check out the financial analysis [notebook][1]
-[1]: https://nbviewer.org/github/jose-cano/Exploring-data/blob/main/financial_analysis.ipynb
-[2]: https://github.com/stefmolin/stock-analysis/tree/2nd_edition
+Check out the financial analysis [notebook][2].
+
+[1]: https://github.com/stefmolin/stock-analysis/tree/2nd_edition
+
+[2]: https://nbviewer.org/github/jose-cano/Exploring-data/blob/main/financial_analysis.ipynb
 
 ## Setup on Colab
 ```shell
