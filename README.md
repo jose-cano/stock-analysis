@@ -1,7 +1,11 @@
 # stock-analysis
 Based on Stefanie Molin's Hands on Data Analysis with Pandas stock_analysis package.
 
-Package for making elements of technical analysis of a stock easier.
+The stock_analysis package contains classes for gathering 
+stock data from the Internet (StockReader); visualizing individual assets or groups of 
+them (Visualizer family); calculating metrics for single assets or groups of them for 
+comparisons (StockAnalyzer and AssetGroupAnalyzer, respectively); and time 
+series modeling with decomposition, ARIMA, and linear regression (StockModeler).
 
 Updated to work on Python 3.7.12 (Google Colab's default Python version) as of 10/19/2021.
 
